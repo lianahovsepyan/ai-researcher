@@ -1,16 +1,4 @@
-import subprocess
-import sys
 
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-try:
-    import langchain_google_genai
-    import langchain_community
-except ImportError:
-    install('langchain-google-genai')
-    install('langchain-community')
-    install('duckduckgo-search')
 import streamlit as st
 import os
 from langchain_google_genai import ChatGoogleGenerativeAI
