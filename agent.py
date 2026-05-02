@@ -2,7 +2,7 @@
 import streamlit as st
 import os
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_community.tools import DuckDuckGoSearchRun
+from langchain_community.tools import DuckDuckGoSearchResults
 from langchain_core.messages import HumanMessage, SystemMessage
 
 # Էջի դիզայնը
@@ -16,7 +16,7 @@ api_key = st.sidebar.text_input("Enter Gemini API Key", type="password")
 if api_key:
     os.environ["GOOGLE_API_KEY"] = api_key
     llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
-    search_tool = DuckDuckGoSearchRun()
+    ssearch_tool = DuckDuckGoSearchResults()
 
     topic = st.text_input("Ի՞նչ թեմա հետազոտենք:", "AI in Physics 2026")
 
