@@ -18,8 +18,7 @@ if api_key:
     os.environ["GOOGLE_API_KEY"] = api_key
     llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
     wrapper = DuckDuckGoSearchAPIWrapper()
-search_tool = DuckDuckGoSearchRun(api_wrapper=wrapper)
-
+    search_tool = DuckDuckGoSearchRun(api_wrapper=wrapper)
     topic = st.text_input("Ի՞նչ թեմա հետազոտենք:", "AI in Physics 2026")
 
     if st.button("Սկսել Հետազոտությունը"):
