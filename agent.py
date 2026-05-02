@@ -16,7 +16,7 @@ api_key = st.sidebar.text_input("Enter Gemini API Key", type="password")
 if api_key:
     os.environ["GOOGLE_API_KEY"] = api_key
     llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
-    ssearch_tool = DuckDuckGoSearchResults()
+    search_tool = DuckDuckGoSearchResults()
 
     topic = st.text_input("Ի՞նչ թեմա հետազոտենք:", "AI in Physics 2026")
 
