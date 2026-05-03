@@ -1,5 +1,5 @@
 streamlit
 langchain-google-genai
 langchain-community
-duckduckgo-search>=6.0.0
-langchain>=0.1.0
+tavily-python
+langchain
