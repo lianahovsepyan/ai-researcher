@@ -19,7 +19,7 @@ if gemini_key and tavily_key:
     os.environ["TAVILY_API_KEY"] = tavily_key
     
     # Մոդելի սահմանում ուղղակիորեն Google-ի միջոցով
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('models/gemini-1.5-flash')
     search_tool = TavilySearchResults(k=3)
 
     topic = st.text_input("Ի՞նչ թեմա հետազոտենք:", "AI in Physics 2026")
