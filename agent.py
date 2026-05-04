@@ -22,7 +22,7 @@ if gemini_key and tavily_key:
     
     # 1. ԿԱՐԵՎՈՐ ՓՈՓՈԽՈՒԹՅՈՒՆ: Gemini-ին տալիս ենք Key-ն ուղղակիորեն
     llm = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash",
+        model="gemini-1.5-flash-latest",
         google_api_key=gemini_key  # Այս տողը ավելացրինք
     )
     
